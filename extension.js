@@ -340,6 +340,22 @@
             }
         };
         
+        // !MehWarn (WIP)
+        bot.commands.inventoryCommand = {
+            command: ['MehWarn'],  //The command to be called. With the standard command literal this would be: !inventory
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    //API.sendChat(subChat(basicBot.chat.inventory, {name: chat.un}));
+                    //API.sendChat("/me screams ""PHYSICAL FUCKING INVENTORY!"" and looks around the room to see who is here.");
+                    API.sendChat("/me [@" + chat.un + "] name + this is a friendly room. Please don't meh. We have no set genre for music and typically have theme days");
+                }
+            }
+        };
+        
         // !multipass
         bot.commands.multipassCommand = {
             command: 'multipass',  //The command to be called. With the standard command literal this would be: !multipass
