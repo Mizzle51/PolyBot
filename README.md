@@ -9,17 +9,16 @@ Stay updated on **basicBot**'s development by following the project on Twitter [
 
 Created by [Yemasthui](https://github.com/Yemasthui) but now maintained by [Benzi](https://github.com/Benzi).
 
-(You can email me via hi@benzi.io or send me a message on [Gitter](https://gitter.im/Benzi) if you have any queries about the bot)
 
 ---
 
 Click [here](https://github.com/Yemasthui/basicBot) for basicBot's main repository.
 
 Using custom room settings or adding functionality is done by loading your own script loading and modifying the bot.
-This repository's purpose is to facilitate this. You can fork the repository and customise [the example script](https://github.com/Yemasthui/basicBot-customization/blob/master/extension.js). 
+This repository's purpose is to facilitate this. You can fork the repository and customise [the example script](https://github.com/Mizzle51/basicBot-customization/blob/master/extension.js). 
 When you have forked the repo, bookmark the following script, __but change _Yemasthui_ to your own github handle__. 
 
-` javascript:(function(){$.getScript('https://rawgit.com/WhitneyOnTheWeb/basicBot/master/extension.js');})(); `
+` javascript:(function(){$.getScript('https://rawgit.com/Mizzle51/basicBot/master/extension.js');})(); `
 
 If you are using your own hosting service for your script, swap the link with your own.
 
@@ -39,24 +38,15 @@ bot.logNewBlacklistedSongs(); //get a list
 ```
 
 ---------
-Triggers
+Triggers -- Needs update
 ---------
-!420               http://big.assets.huffingtonpost.com/slide_297900_2459978_free.gif
+
 !bacon             http://big.assets.huffingtonpost.com/slide_297900_2459978_free.gif
 !blazing           http://i.imgur.com/tcnm9.gif
 !derp              https://33.media.tumblr.com/tumblr_m9g0owW0XJ1rqfhi2o1_400.gif
-!inventory         PHYSICAL FUCKING INVENTORY!!!
 !lunch             http://giphy.com/gifs/420-bobs-burgers-lacey-micallef-10ipb798xgDruE
 !multipass         http://33.media.tumblr.com/tumblr_lfrui39J1Y1qds45xo1_500.gif
 
-
-Feature Requests:
-
-    Slots
-    Bowling
-    Dice Game
-    Lottery
-    Coin Flip
 
 
 Copyright
