@@ -782,9 +782,9 @@
     //Change the bots default settings and make sure they are loaded on launch
 
    localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Chembot",
+        botName: "PolyBot",
         language: "english",
-        chatLink: "https://rawgit.com/Mizzle51/PolyBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Mizzle51/basicBot/master/lang/en.json",
         startupCap: 10, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: true, // true or false
@@ -827,12 +827,12 @@
         filterChat: false,
         etaRestriction: false,
         welcome: true,
-        opLink: "https://github.com/Mizzle51/PolyBot/blob/master/blacklists/OPlist.json",
+        opLink: "https://github.com/Mizzle51/basicBot/blob/master/blacklists/OPlist.json",
         rulesLink: null,
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: "https://www.facebook.com/groups/polygeek/",
+        website: "https://google.com",
         intervalMessages: ["Nice tracks, keep em' coming!",
                            "I'm really getting into the music!",
                            "Take a toke, pass it around and play some more groovy toons!",
@@ -867,9 +867,9 @@
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Mizzle51/PolyBot/master/blacklists/NSFWlist.json",
-            OP: "https://rawgit.com/Mizzle51/PolyBot/master/blacklists/OPlist.json",
-            BANNED: "https://rawgit.com/Mizzle51/PolyBot/master/blacklists/BANNEDlist.json"
+            NSFW: "https://rawgit.com/Mizzle51/basicBot/master/blacklists/NSFWlist.json",
+            OP: "https://rawgit.com/Mizzle51/basicBot/master/blacklists/OPlist.json",
+            BANNED: "https://rawgit.com/Mizzle51/basicBot/master/blacklists/BANNEDlist.json"
         }
     }));
 
