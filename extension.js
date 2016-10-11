@@ -2,7 +2,7 @@
 (function () {
     
     //Change this to your GitHub username so you don't have to modify so many things.
-    var fork = "WhitneyOnTheWeb";
+    var fork = "Mizzle51";
 		
     //Define our function responsible for extending the bot.
     function extend() {
@@ -258,24 +258,7 @@
                 }
             }
         };
-        
-        
-        // !inventory
-        bot.commands.inventoryCommand = {
-            command: ['inventory', 'pfi'],  //The command to be called. With the standard command literal this would be: !inventory
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    //API.sendChat(subChat(basicBot.chat.inventory, {name: chat.un}));
-                    //API.sendChat("/me screams ""PHYSICAL FUCKING INVENTORY!"" and looks around the room to see who is here.");
-                    API.sendChat("/me [@" + chat.un + "] http://i.imgur.com/Y6Ebyp0.gif");
-                }
-            }
-        };
-        
+		
         // !food
         bot.commands.foodCommand = {
             command: 'food',  //The command to be called. With the standard command literal this would be: !food
@@ -801,7 +784,7 @@
    localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Chembot",
         language: "english",
-        chatLink: "https://rawgit.com/WhitneyOnTheWeb/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Mizzle51/PolyBot/master/lang/en.json",
         startupCap: 10, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: true, // true or false
@@ -840,16 +823,16 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 6,
-        motd: "Welcome to Chemical Cowboys - play what you want!",
+        motd: "Welcome to Poly-Geekry - play what you want!",
         filterChat: false,
         etaRestriction: false,
         welcome: true,
-        opLink: "https://github.com/WhitneyOnTheWeb/basicBot/blob/master/blacklists/OPlist.json",
+        opLink: "https://github.com/Mizzle51/PolyBot/blob/master/blacklists/OPlist.json",
         rulesLink: null,
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: "http://rawrmedusa.wix.com/chemical-cowboys",
+        website: "https://www.facebook.com/groups/polygeek/",
         intervalMessages: ["Nice tracks, keep em' coming!",
                            "I'm really getting into the music!",
                            "Take a toke, pass it around and play some more groovy toons!",
@@ -884,9 +867,9 @@
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/WhitneyOnTheWeb/basicBot/master/blacklists/NSFWlist.json",
-            OP: "https://rawgit.com/WhitneyOnTheWeb/basicBot/master/blacklists/OPlist.json",
-            BANNED: "https://rawgit.com/WhitneyOnTheWeb/basicBot/master/blacklists/BANNEDlist.json"
+            NSFW: "https://rawgit.com/Mizzle51/PolyBot/master/blacklists/NSFWlist.json",
+            OP: "https://rawgit.com/Mizzle51/PolyBot/master/blacklists/OPlist.json",
+            BANNED: "https://rawgit.com/Mizzle51/PolyBot/master/blacklists/BANNEDlist.json"
         }
     }));
 
